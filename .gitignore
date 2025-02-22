@@ -160,5 +160,11 @@ cython_debug/
 .idea/
 .DS_Store
 
-store/media/
-!store/media/images/products/0/
+store/media/images/catalog_items
+store/media/images/users
+store/media/images/products/*
+!store/media/images/products/0
+!store/media/images/products/0/*
+
+
+!megano-frontend/*

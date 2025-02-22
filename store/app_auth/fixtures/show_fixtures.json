@@ -1,0 +1,327 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$vw5TwmtpYqdElCiGhtaTn4$0tnSdNitxEes1zNt9pa1SxTKesfGWJDn1Tczy2QqPVY=",
+            "last_login": "2024-07-22T18:12:57.550Z",
+            "is_superuser": false,
+            "username": "ExampleUser",
+            "first_name": "ExampleUser",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-07-22T18:12:57.220Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$9jsa1zZmaWKc43BVG2YPfe$mFeSCkpTO50ZWLYJJcsiuQtwTmhRZA5Epu232KeuTIo=",
+            "last_login": "2024-07-22T18:13:36.579Z",
+            "is_superuser": false,
+            "username": "ExampleUser_2",
+            "first_name": "ExampleUser 2",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-07-22T18:13:36.264Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "app_auth.profile",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "phone": 0,
+            "default_city": "",
+            "default_address": "",
+            "default_delivery_type": "",
+            "default_payment_type": ""
+        }
+    },
+    {
+        "model": "app_auth.profile",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "phone": 0,
+            "default_city": "",
+            "default_address": "",
+            "default_delivery_type": "",
+            "default_payment_type": ""
+        }
+    },
+
+
+
+
+
+
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 1,
+        "fields": {
+            "title": "Domestic appliance",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 2,
+        "fields": {
+            "title": "Kitchen appliance",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 3,
+        "fields": {
+            "title": "Refrigerators",
+            "parent_category": 2
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 4,
+        "fields": {
+            "title": "Dishwashers",
+            "parent_category": 2
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 5,
+        "fields": {
+            "title": "Computer technology",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 6,
+        "fields": {
+            "title": "Peripherals and accessories",
+            "parent_category": 5
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 8,
+        "fields": {
+            "title": "USB flash drives",
+            "parent_category": 5
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 9,
+        "fields": {
+            "title": "External SSD",
+            "parent_category": 5
+        }
+    },
+    {
+        "model": "app_catalog.catalogitem",
+        "pk": 10,
+        "fields": {
+            "title": "kettles",
+            "parent_category": 2
+        }
+    },
+
+    {
+        "model": "app_products.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Flash cards and drives"
+        }
+    },
+    {
+        "model": "app_products.tag",
+        "pk": 2,
+        "fields": {
+            "name": "32 Gb"
+        }
+    },
+    {
+        "model": "app_products.tag",
+        "pk": 3,
+        "fields": {
+            "name": "computer tools"
+        }
+    },
+    {
+        "model": "app_products.specification",
+        "pk": 1,
+        "fields": {
+            "name": "Memory capacity",
+            "value": "32 GB"
+        }
+    },
+    {
+        "model": "app_products.specification",
+        "pk": 2,
+        "fields": {
+            "name": "color",
+            "value": "red"
+        }
+    },
+    {
+        "model": "app_products.specification",
+        "pk": 3,
+        "fields": {
+            "name": "color",
+            "value": "blue"
+        }
+    },
+    {
+        "model": "app_products.product",
+        "pk": 1,
+        "fields": {
+            "title": "Flash drive 32 GB DataTrevor",
+            "description": "Flash drive 32 GB DataTrevor Very cheap and best drive in whole world",
+            "price": "3.99",
+            "count": 5,
+            "date": "2023-12-25T20:25:57.989Z",
+            "rating": "4.3",
+            "free_delivery": false,
+            "category": 8,
+            "sold": 1,
+            "tags": [
+                1,
+                2,
+                3
+            ],
+            "specifications": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app_products.product",
+        "pk": 2,
+        "fields": {
+            "title": "Flash drive 256 GB DataTrevor",
+            "description": "Flash drive 256 GB DataTrevor Very cheap and best drive in whole world",
+            "price": "59.99",
+            "count": 7,
+            "date": "2024-02-12T19:19:11.691Z",
+            "rating": "2.5",
+            "free_delivery": false,
+            "category": 8,
+            "sold": 0,
+            "tags": [
+                1,
+                3
+            ],
+            "specifications": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "app_products.product",
+        "pk": 3,
+        "fields": {
+            "title": "Kettle",
+            "description": "Good kettle",
+            "price": "12.59",
+            "count": 3,
+            "date": "2024-02-12T19:37:26.555Z",
+            "rating": "5.0",
+            "free_delivery": true,
+            "category": 10,
+            "sold": 22,
+            "tags": [],
+            "specifications": []
+        }
+    },
+    {
+        "model": "app_products.product",
+        "pk": 4,
+        "fields": {
+            "title": "Kettle 2",
+            "description": "Good kettle",
+            "price": "12.79",
+            "count": 2,
+            "date": "2024-02-12T19:37:26.555Z",
+            "rating": "3.0",
+            "free_delivery": true,
+            "category": 10,
+            "sold": 2,
+            "tags": [],
+            "specifications": []
+        }
+    },
+    {
+        "model": "app_products.image",
+        "pk": 1,
+        "fields": {
+            "src": "images/products/0/empty.jpeg",
+            "alt": "no images have been added",
+            "product": 1
+        }
+    },
+    {
+        "model": "app_products.image",
+        "pk": 2,
+        "fields": {
+            "src": "images/products/0/empty.jpeg",
+            "alt": "no images have been added",
+            "product": 2
+        }
+    },
+    {
+        "model": "app_products.image",
+        "pk": 3,
+        "fields": {
+            "src": "images/products/0/empty.jpeg",
+            "alt": "no images have been added",
+            "product": 3
+        }
+    },
+    {
+        "model": "app_products.review",
+        "pk": 1,
+        "fields": {
+            "text": "Good",
+            "rate": 3,
+            "user": 1,
+            "date": "2024-03-01T07:47:45.814Z",
+            "product": 1
+        }
+    },
+    {
+        "model": "app_products.review",
+        "pk": 2,
+        "fields": {
+            "text": "Good one! Use it every day!!!",
+            "rate": 5,
+            "user": 2,
+            "date": "2024-03-27T10:07:13.339Z",
+            "product": 1
+        }
+    },
+    {
+        "model": "app_products.saleitem",
+        "pk": 1,
+        "fields": {
+            "sale_price": "42.99",
+            "date_from": "2024-03-03",
+            "date_to": "2024-03-03",
+            "product": 1
+        }
+    }
+
+]
