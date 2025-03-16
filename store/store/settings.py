@@ -17,8 +17,7 @@ import rest_framework.pagination
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-DATABASE_DIR = BASE_DIR / 'database'
-DATABASE_DIR.mkdir(exist_ok=True)
+DATABASE_DIR = '/store/database'
 
 
 # Quick-start development settings - unsuitable for production
@@ -98,7 +97,7 @@ WSGI_APPLICATION = 'store.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': DATABASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(DATABASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -140,7 +139,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = '/store/media'
 
 MEDIA_URL = '/media/'
 

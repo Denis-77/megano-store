@@ -13,3 +13,9 @@ Dockerfile
 
 # Virtual environment
 venv/
+
+# Database
+store/database
+
+# Mediafiles
+store/media
