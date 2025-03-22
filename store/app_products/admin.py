@@ -3,6 +3,8 @@ from .models import (
     Product, Tag, Specification, Image, Review, SaleItem
 )
 
+class ImageInline(admin.TabularInline):
+    model = Image
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -11,6 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating', 'count', 'free_delivery', 'category',
         'sold'
     )
+    inlines = [ImageInline, ]
 
 
 @admin.register(Tag)
