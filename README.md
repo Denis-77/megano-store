@@ -9,6 +9,7 @@ The product catalog includes:
 - sales
 - comments and rating of products
 - various tags, parametr and photos
+
 Additional options:
 - registration
 - add product to cart before/after registration
