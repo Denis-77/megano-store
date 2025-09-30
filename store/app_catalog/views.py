@@ -12,7 +12,7 @@ from .serializers import (
 from .models import CatalogItem
 from app_products.models import Product
 
-LIST_OF_PROMOTED = [4, 8, 9, 2, 10, 3]
+LIST_OF_PROMOTED = [5, 8, 9, 6, 10, 7]
 
 
 class CatalogListView(generics.ListAPIView):
